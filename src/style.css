@@ -1,0 +1,149 @@
+* { 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: linear-gradient(120deg, #e0ddd2, #a5a1a0);
+    color: white;
+    font-family: "Poppins", sans-serif;
+    min-height: 100vh;
+}
+
+header {
+    font-size: 1.5rem;
+}
+
+header, form {
+    min-height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+form input, form button {
+    padding: 0.5rem;
+    font-size: 1.2rem;
+    border: none;
+    background: white;
+    color: #777;
+}
+
+form input::placeholder{
+    color: #e0ddd2;
+}
+
+form button:hover{
+    background: #e0ddd2;
+    color: white;
+    transition: all 0.5s ease;
+    cursor: pointer;
+}
+
+i {
+    font-size: 30px;
+    margin-right: 10px;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    margin: 28px;
+}
+
+.tweet {
+    width: 400px;
+    min-height: 100px;
+    margin: 28px;
+    border: 3px solid whitesmoke;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.tweet:hover {
+    cursor: pointer;
+    background-color: #e0ddd2;
+    transition: all 0.8s ease;
+}
+
+.tweet-header {
+    display: flex;
+    margin-bottom: 8px;
+}
+
+.tweet h3, img {
+    margin-left: 8px;
+    height: 50px;
+}
+
+.tweet img {
+    border-radius: 10px;
+}
+
+.tweet h3 {
+    line-height: 50px;
+}
+
+.tweet p {
+    font-size: 1.2rem;
+    line-height: 2rem;
+    border-top: 1px dotted #777;
+    padding-top: 8px;
+    margin-left: 8px;
+    min-height: 200px;
+}
+
+.tweet h4 {
+    margin-left: 8px;
+    border-top: 1px dotted #777;
+    padding-top: 8px;
+
+}
+
+
+@keyframes animacao-loading {
+    from {
+        bottom: 0;
+    }
+    to {
+        bottom: 30px;
+    }
+}
+
+.loading-container {
+    text-align: center;
+}
+
+.loading1, .loading2, .loading3 {
+    color: whitesmoke;
+    font-size: 8rem;
+    animation-name: animacao-loading;
+    animation-duration: 0.8s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    position: relative;
+}
+
+.loading1 {
+    animation-delay: 0.6s;
+}
+.loading2 {
+    animation-delay: 0.3s;
+}
+.loading3 {
+    animation-delay: 0;
+}
+
+.infoText {
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.HASHTAGS {
+    color: teal;
+}
