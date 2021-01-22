@@ -1,7 +1,5 @@
 # Twitter App
 
-No momento hosteando com uso do Heroku e Netlify:
-[https://linx-twitter-app.netlify.app/](https://linx-twitter-app.netlify.app/)
 Como a API do Twitter não suporta CORS e não pode ser usada a partir de um navegador, precisei criar um servidor (server.js). No fim, esse projeto precisa de **2 terminais** rodando no fundo, um deles para o servidor e o outro para o React.  <br/>
 
 
